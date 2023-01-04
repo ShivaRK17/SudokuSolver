@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 60px;
+    background-color:rgb(38, 38, 38);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding: 0 30px;
+    justify-content: center;
+}
+nav h2{
+    margin: 0 20px;
+}
+
+.d-none{
+    display: none;
+}
+#alert{
+    position:fixed;
+    top: 20px;
+    left: 2.5vw;
+    width: 95vw;
+    padding: 20px;
+    background-color:#2c0b0e;
+    color: #ea868f;
+    border: solid 1px #842029;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.odd-section{
+    background-color: #f4f4e2;
+}
+#puzzle{
+    width: 40vw;
+    height: 40vw;
+}
+#puzzle input{
+    width: calc(100%/9);
+    height: calc(100%/9);
+    border-spacing: 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.butto{
+    display: flex;
+    justify-content:center;
+}
+#btn{
+    background-color: rgb(0, 157, 255);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    margin: 5px 25px;
+}
+#cl{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    margin: 5px 25px;
+}
+
+
+@media screen and (max-width:700px) {
+    #puzzle{
+        width: 90vw;
+        height: 90vw;
+    }
+}
